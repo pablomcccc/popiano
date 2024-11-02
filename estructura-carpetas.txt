@@ -1,0 +1,24 @@
+piano-app/
+├── src/
+│   ├── app/
+│   │   ├── (auth)/
+│   │   │   ├── login/
+│   │   │   └── register/
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── components/
+│   │   ├── ui/
+│   │   ├── piano/
+│   │   └── sheet-music/
+│   ├── lib/
+│   │   ├── prisma.ts
+│   │   ├── auth.ts
+│   │   └── midi-handler.ts
+│   ├── types/
+│   │   └── index.ts
+│   └── utils/
+│       └── helpers.ts
+├── prisma/
+│   └── schema.prisma
+├── public/
+└── tests/ 

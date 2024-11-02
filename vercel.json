@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "regions": ["cdg1"],
+  "env": {
+    "NEXTAUTH_URL": "https://piano-app.vercel.app",
+    "DATABASE_URL": "@database-url",
+    "AWS_REGION": "@aws-region",
+    "AWS_BUCKET_NAME": "@aws-bucket-name"
+  },
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+} 

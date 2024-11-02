@@ -1,0 +1,61 @@
+{
+  "name": "piano-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "type-check": "tsc --noEmit",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "prepare": "husky install",
+    "db:seed": "prisma db seed",
+    "check:deps": "ts-node scripts/check-deps.ts",
+    "ci": "npm run check:deps && npm run type-check && npm run lint && npm test",
+    "validate:env": "ts-node scripts/validate-env.ts"
+  },
+  "dependencies": {
+    "@auth/prisma-adapter": "^1.0.0",
+    "@prisma/client": "^5.0.0",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@tanstack/react-query": "^5.0.0",
+    "aws-sdk": "^2.1499.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "next": "14.0.0",
+    "next-auth": "^4.24.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^2.5.4",
+    "tone": "^14.7.77",
+    "vexflow": "^4.2.0",
+    "zustand": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.5",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "autoprefixer": "^10.0.0",
+    "dotenv": "^16.4.5",
+    "eslint": "^8.0.0",
+    "eslint-config-next": "14.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "husky": "^8.0.0",
+    "postcss": "^8.0.0",
+    "prettier": "^3.0.0",
+    "prettier-plugin-tailwindcss": "^0.5.0",
+    "prisma": "^5.0.0",
+    "tailwindcss": "^3.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.0.0",
+    "zod": "^3.23.8"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  }
+}
